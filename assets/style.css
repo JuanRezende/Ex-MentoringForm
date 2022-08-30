@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #efefef;
+}
+
+body::before {
+  content: "";
+  background: #535971;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 436px;
+}
+
+h1,
+h2,
+h3,
+fieldset legend {
+  font-family: "Staatliches", cursive;
+}
+
+.wrapper {
+  width: 750px;
+  margin: 0 auto;
+  padding: 140px 0;
+}
+
+header h1,
+p {
+  color: #fff;
+}
+
+header {
+  margin-bottom: 60px;
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 18px;
+}
+
+header p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 20px 20px 0px 0px;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset h2 {
+  color: #535971;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+fieldset legend {
+  color: #535971;
+  font-size: 24px;
+  line-height: 34px;
+
+  border-bottom: 1px solid #e6e6f0;
+
+  width: 100%;
+  padding-bottom: 8px;
+  margin-bottom: calc(32 - 16);
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col-2 div {
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  color: #4e4958;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.input-wrapper input {
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  background: #fafafc;
+
+  height: 56px;
+  padding: 0 24px;
+}
+
+.input-wrapper span {
+  color: #c1bccc;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+
+  margin-left: 5px;
+}
+
+.input-wrapper label span:hover {
+  color: #6c6a71;
+}
+
+.col-3 {
+  display: flex;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
+
+.time-event {
+  display: flex;
+  gap: 10px;
+  margin-left: 32px;
+}
+
+footer {
+  background: #535971;
+  border-radius: 0px 0px 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 52px 71px;
+}
+
+footer .button {
+  color: #ffffff;
+  cursor: pointer;
+
+  font-family: "Staatliches", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+
+  background: #ff5374;
+  border-radius: 20px;
+  border: none;
+
+  height: 56px;
+  transition: background 200ms;
+}
+
+footer .button:hover {
+  background: #d44662;
+}
+
+input:invalid {
+  border: 1px solid #ff1010;
+}
